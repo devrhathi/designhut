@@ -1,0 +1,11 @@
+.search{
+    margin-top: 4vh;
+    text-align: center;
+}
+
+.searchBar{
+    width: 40vw;
+    height: 5vh;
+    border-radius: 20px;
+    outline: none;
+}
