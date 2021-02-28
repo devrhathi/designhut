@@ -1,19 +1,17 @@
 .designCard * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 .designCard{
-    font-family: 'Rubik';
+    font-family: 'Courier New', Courier, monospace;
     font-size: larger;
     margin: 8vh 4vw;
     border: 1px solid black;
     border-radius: 32px;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    white-space: nowrap;
-    width: 20vw;
-    height: 40%;
+    width: 25vw;
+    height: fit-content;
     transition: transform .4s;
 }
 
@@ -25,12 +23,51 @@
 
 .designCardName{
     text-align: center;
-    font-size: large;
+    font-size: larger;
     font-weight: bold;
 }
 
-img{
-    object-fit: cover;
-    display: block;
+.designCardImage{
+    height: 80%;
 }
+
+img{
+    width: 100%;
+    height: 40%;
+    object-fit: fill;
+}
+
+.designCardDesc {
+    padding: 4px 12px;
+    overflow: hidden;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    hyphens: auto;
+    height: 70px;
+}
+
+.designCardDesc p{
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    overflow: hidden;
+    height: 10vh;
+}
+
+
+/*Media queries for mob view */
+
+@media(max-width : 768px){
+    .designCard{
+        width: 40vw;
+    }
+}
+
+@media(max-width : 480px){
+    .designCard{
+        margin-left: 10%;
+        width: 80vw;
+    }
+}
+
+
 

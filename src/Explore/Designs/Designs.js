@@ -7,8 +7,7 @@ function Designs(props) {
     
     //put everything in
     props.demoData.forEach((design) => {
-            //add search functionality later here ****************
-            if(design.name.indexOf(props.searchText) === -1){
+            if(design.name.toLowerCase().indexOf(props.searchText.toLowerCase()) === -1){
                 return;
             }
 

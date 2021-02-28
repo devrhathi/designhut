@@ -1,0 +1,11 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.explore{
+    border : 1px solid transparent;
+    min-height: 100vh;
+    max-height: max-content;
+    background: linear-gradient(rgb(255, 200, 89), rgba(94, 255, 142, 0.603), green);
+}

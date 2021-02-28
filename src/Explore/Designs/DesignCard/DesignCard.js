@@ -9,8 +9,9 @@ function DesignCard(props) {
             <p>{props.name}</p>
             </div>
 
-            <div></div>
+            <div className={classes.designCardImage}>
             <img src={props.image} alt={props.name}/>
+            </div>
 
             <div className={classes.designCardDesc}>
             <p>{props.desc}</p>

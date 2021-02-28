@@ -1,4 +1,5 @@
 import Explore from './Explore/Explore';
+import classes from './Welcome.module.css';
 // import Add from './Add/Add';
 
 function Welcome() {
@@ -6,7 +7,7 @@ function Welcome() {
   const DESIGNS = [
     {name : "Tree", desc : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis congue purus, ut aliquet dolor. Duis placerat et lorem non porta. Curabitur molestie ullamcorper dui, in posuere lacus venenatis quis.", image : "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__340.jpg"},
 
-    {name : "Nature", desc : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis congue purus, ut aliquet dolor. Duis placerat et lorem non porta. Curabitur molestie ullamcorper dui, in posuere lacus venenatis quis.", image : "https://image.shutterstock.com/image-photo/mountains-under-mist-morning-amazing-260nw-1725825019.jpg"},
+    {name : "Nature", desc : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis congue purus, ut aliquet dolor. Duis placerat et lorem non porta. Curabitur molestie ullamcorper dui, in posuere lacus venenatis quis.", image : "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Shaqi_jrvej.jpg/1200px-Shaqi_jrvej.jpg"},
 
     {name : "Sky", desc : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis congue purus, ut aliquet dolor. Duis placerat et lorem non porta. Curabitur molestie ullamcorper dui, in posuere lacus venenatis quis.", image : "https://static.toiimg.com/photo/72975551.cms"},
 
@@ -20,7 +21,7 @@ function Welcome() {
 
 
   return (
-    <div className="App">
+    <div className={classes.welcome}>
       <Explore demoData = {DESIGNS}/>
       {/* <Add /> */}
     </div>

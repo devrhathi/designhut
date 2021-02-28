@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Search from './Search/Search';
 import Designs from './Designs/Designs';
+import classes from './Explore.module.css';
 
 class Explore extends Component {
     constructor(props){
@@ -23,7 +24,7 @@ class Explore extends Component {
     render() {
         console.log(this.state.searchText);
         return (
-            <div>
+            <div className={classes.explore}>
                 <Search 
                     currentSearchText={this.state.searchText}
                     handleSearchTextChange={this.handleSearchTextChange}
