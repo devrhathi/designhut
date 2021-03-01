@@ -1,0 +1,57 @@
+.addCard{
+    margin-top: 4%;
+    width: 30%;
+    height: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 32px;
+    padding: 8px;
+    border: 2px dotted black;
+}
+
+.addName{
+    text-align: center;
+}
+
+.addImage{
+    border: 2px dotted black;
+    margin: 2% auto;
+    width: 70%;
+    height: 40vh;
+    overflow: hidden;
+}
+
+.addImageInput{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: 21%;
+    height: 40%;
+    outline: none;
+    opacity: 0;
+}
+
+.addImageInput:hover{
+    cursor: pointer;
+}
+
+.addImage > p {
+    padding: 40%;
+    text-align: center;
+}
+
+.addImage span{
+    font-size: xx-large;
+    font-weight: bolder;
+    padding: 0 8px;
+    border: 1px solid grey;
+}
+
+.addDesc{
+    text-align: center;
+}
+
+.addDesc > textarea{
+    width: 80%;
+    height: 8vh;
+}
