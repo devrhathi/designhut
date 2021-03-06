@@ -22,7 +22,6 @@ class Explore extends Component {
     }
 
     render() {
-        console.log(this.state.searchText);
         return (
             <div className={classes.explore}>
                 <Search 

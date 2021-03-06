@@ -1,6 +1,6 @@
 import Explore from './Explore/Explore';
 import classes from './Welcome.module.css';
-// import Add from './Add/Add';
+import Add from './Add/Add';
 
 function Welcome() {
 
@@ -16,16 +16,14 @@ function Welcome() {
     {name : "Galaxy", desc : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis congue purus, ut aliquet dolor. Duis placerat et lorem non porta. Curabitur molestie ullamcorper dui, in posuere lacus venenatis quis.", image : "https://www.w3schools.com/w3css/img_lights.jpg"},
 
     {name : "Random", desc : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis congue purus, ut aliquet dolor. Duis placerat et lorem non porta. Curabitur molestie ullamcorper dui, in posuere lacus venenatis quis.", image : "https://killerattitudestatus.in/wp-content/uploads/2019/12/gud-night-images.jpg"},
-
-    {name : "Car", desc : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis congue purus, ut aliquet dolor. Duis placerat et lorem non porta. Curabitur molestie ullamcorper dui, in posuere lacus venenatis quis.", image : "C:\fakepath\need_for_speed_heat_video_game_2-wallpaper-1920x1080.jpg"}
     
   ];
 
 
   return (
     <div className={classes.welcome}>
-      <Explore demoData = {DESIGNS}/>
-      {/* <Add /> */}
+      {/* <Explore demoData = {DESIGNS}/> */}
+      <Add />
     </div>
   );
 }

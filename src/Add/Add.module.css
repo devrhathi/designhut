@@ -1,6 +1,6 @@
 .addCard{
     margin-top: 4%;
-    width: 30%;
+    width: 28%;
     height: fit-content;
     margin-left: auto;
     margin-right: auto;
@@ -13,11 +13,15 @@
     text-align: center;
 }
 
+.addName > input{
+    width: 80%;
+}
+
 .addImage{
     border: 2px dotted black;
-    margin: 2% auto;
+    margin: 4% auto;
     width: 70%;
-    height: 40vh;
+    height: 50vh;
     overflow: hidden;
 }
 
@@ -54,4 +58,8 @@
 .addDesc > textarea{
     width: 80%;
     height: 8vh;
+}
+
+.add > button{
+    margin: 4% 49%;
 }
