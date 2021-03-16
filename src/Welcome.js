@@ -4,6 +4,7 @@ import Add from './Add/Add';
 
 function Welcome() {
 
+
   const DESIGNS = [
     {name : "Tree", desc : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis congue purus, ut aliquet dolor. Duis placerat et lorem non porta. Curabitur molestie ullamcorper dui, in posuere lacus venenatis quis.", image : "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__340.jpg"},
 

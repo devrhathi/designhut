@@ -1,13 +1,20 @@
 import React, {useRef} from 'react'
 import classes from './Add.module.css';
+import firebase from '../firebase'
 
 function Add (props) {
-
     //file upload handling (image)
     const refImage = useRef(null);
-
     function handleSubmit(e){
-        console.log();
+        //Upload file to firebase first, then go to explore
+        let bucketName = 'images';
+        let file = refImage.current.files[0];
+        let storageRef = firebase.storage().ref(`${bucketName}/${file.name}`);
+        let uploadTask = storageRef.put(file);
+        uploadTask.snapshot.ref.getDownloadURL().then((downloadURL) => {
+            console.log('File available at', downloadURL);
+          });      
+        
     }
 
     return (
