@@ -7,8 +7,7 @@ function Add (props) {
     //state for everything
     const[postName, setPostName] = useState('');
     const[postDesc, setPostDesc] = useState('');
-
-
+    const[image, setImage] = useState();
     //file upload handling (image)
     const refImage = useRef(null);
 
@@ -33,6 +32,27 @@ function Add (props) {
             }) 
     }
 }
+    let imageToShow = image ? 
+    (<div className={classes.addImage}>
+        <img 
+        className={classes.addPreviewImage}
+        src={image} 
+        alt='hello'
+        />
+        </div>
+        ) : 
+
+    (
+    <div className={classes.addImage}>
+        <input 
+        ref={refImage}
+        onChange={()=>{setImage(URL.createObjectURL(refImage.current.files[0]))}}
+        className={classes.addImageInput} 
+        type="file" 
+        name="image" 
+    />
+        <p>Click To Add <br/><span> + </span> </p>
+        </div>)
 
     return (
         <div className={classes.add}>
@@ -46,17 +66,7 @@ function Add (props) {
                     onChange={(e)=> {setPostName(e.target.value)}}
                     />
                 </div>
-                <div className={classes.addImage}>
-                    {/* Image Upload */}
-
-                    <input 
-                        ref={refImage}
-                        className={classes.addImageInput} 
-                        type="file" 
-                        name="image" 
-                    />
-                        <p>Click To Add <br/><span> + </span> </p>
-                </div>
+                {imageToShow}
                 <div className={classes.addDesc}>
                     <textarea 
                     placeholder="Enter a description..." 

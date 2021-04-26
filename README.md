@@ -1,4 +1,4 @@
-[] Add image shows image after selected (onChange)
+[x] Add image shows image after selected (onChange)
 [] Add Search Functionality
 
 

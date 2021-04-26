@@ -5,8 +5,8 @@ import Add from './Add/Add';
 function Welcome() {
   return (
     <div className={classes.welcome}>
-      <Explore />
-      {/* <Add /> */}
+      {/* <Explore /> */}
+      <Add />
     </div>
   );
 }

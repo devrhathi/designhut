@@ -35,6 +35,12 @@
     opacity: 0;
 }
 
+.addPreviewImage{
+    width: 100%;
+    height: 40%;
+    object-fit: fill;
+}
+
 .addImageInput:hover{
     cursor: pointer;
 }
