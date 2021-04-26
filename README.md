@@ -1,3 +1,7 @@
+[] Add image shows image after selected (onChange)
+[] Add Search Functionality
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

@@ -1,7 +1,7 @@
 import React from 'react';
 import classes from './Search.module.css'
 
-function Search(props) {
+function    Search(props) {
 
     function handleSearchTextChange(e){
         props.handleSearchTextChange(e.target.value);

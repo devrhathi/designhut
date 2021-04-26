@@ -1,31 +1,35 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import DesignCard from './DesignCard/DesignCard';
 import classes from './Designs.module.css';
+import firebase from '../../firebase';
+import 'firebase/firebase-firestore';
 
 function Designs(props) {
-    const designToShow = []
-    
-    //put everything in
-    props.demoData.forEach((design) => {
-            if(design.name.toLowerCase().indexOf(props.searchText.toLowerCase()) === -1){
-                return;
-            }
 
-            designToShow.push(
-            <DesignCard
-                key={design.name}
-                name={design.name}
-                desc={design.desc}
-                image={design.image}
-            />
-            )
-    }
-);
+    const [posts, setPosts] = useState();
+    const [searchText, setSearchText] = useState();
+
+    useEffect(() => {
+        let data = [];
+        //grab everything from the db
+        firebase.firestore().collection('posts').get().then(querySnapshot => {
+            querySnapshot.forEach(doc => {data.push(doc.data())})
+            setPosts(data);
+            console.log(data)
+        });
+    }, []);
 
 
     return (
         <div className={classes.designs}>
-            {designToShow}
+            {posts && posts.map(post => {
+                return (<DesignCard
+                    key = {post.postImageURL}
+                    name = {post.postName}
+                    image = {post.postImageURL}
+                    desc = {post.postDesc}
+                    />)
+            })}
         </div>
     )
 }
