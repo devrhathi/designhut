@@ -1,9 +1,4 @@
-<<<<<<< HEAD
 [x] Add image shows image after selected (onChange)
-=======
-[] Add image shows image after selected (onChange)
-
->>>>>>> 3aa1a4368af02cb28bfd0b99663cd2dd891a07fa
 [] Add Search Functionality
 
 
