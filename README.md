@@ -1,5 +1,8 @@
 [x] Add image shows image after selected (onChange)
-[] Add Search Functionality
+
+[x] Add Search Functionality
+
+[] Fix this crappy looking UI
 
 
 # Getting Started with Create React App

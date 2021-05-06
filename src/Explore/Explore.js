@@ -31,7 +31,6 @@ class Explore extends Component {
 
                 <Designs
                     searchText = {this.state.searchText}
-                    demoData = {this.props.demoData}
                 />
             </div>
         )
