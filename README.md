@@ -6,7 +6,7 @@ It is made just for the learning purposes, It is not yet optimized or production
 
 Demo :
 
-![github](https://user-images.githubusercontent.com/68689014/118771989-d6071a80-b8a0-11eb-81ad-59681416a5d4.mp4)
+![demo](https://user-images.githubusercontent.com/68689014/118773281-4cf0e300-b8a2-11eb-9f70-c5e01ab76e08.gif)
 
 # Tasks
 
