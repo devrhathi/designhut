@@ -1,7 +1,7 @@
 import firebase from 'firebase';
     
   var firebaseConfig = {
-    apiKey: "AIzaSyAk35zQQisvxcid4ysGvliuW2LeDQDAkvo",
+    apiKey: "",
     authDomain: "designhut-bf2ea.firebaseapp.com",
     projectId: "designhut-bf2ea",
     storageBucket: "designhut-bf2ea.appspot.com",
